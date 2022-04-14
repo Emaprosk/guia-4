@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class VideoClub {
 
 
-    public void consultarDetallesDeUnaPeliDeterminada(LinkedList<Pelicula> pelis,String pelicula){
+    public void consualtarDetallesDeUnaPeliDeterminada(LinkedList<Pelicula> pelis,String pelicula){
 
     }
 
