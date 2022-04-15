@@ -74,16 +74,17 @@ public class Main {
         listClients.add(client3);
 
         VideoClub vd = new VideoClub();
-        //vd.consultarDisponibilidad(listPelis,"Matilda");
+        //vd.consultarDisponibilidad(listPelis,"Matilda");                                      //ejer1
 
-        //vd.consultarAlquileres(listAlquileres);
+        //vd.consultarAlquileres(listAlquileres);                                               //ejer2
 
-        //System.out.println(vd.consulUltiAlquileres(listAlquileres,client2));
+        //System.out.println(vd.consulUltiAlquileres(listAlquileres,client2));                  //ejer3
 
-        //vd.consultarPelisMasAlquilas(listAlquileres);
+        //vd.consultarPelisMasAlquilas(listAlquileres);                                         //ejer4
 
-        //vd.consultarPelisMasAlquilasConMejoras(listAlquileres,Genero.COMEDIA);
+        //vd.consultarPelisMasAlquilasConMejoras(listAlquileres,Genero.COMEDIA);                //ejer5
 
+        //vd.consualtarDetallesDeUnaPeliDeterminada(listPelis,"Scary Movie", listAlquileres);   //ejer6
 
 
 

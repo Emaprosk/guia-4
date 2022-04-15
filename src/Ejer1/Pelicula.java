@@ -135,7 +135,7 @@ public class Pelicula {
                 ", stock=" + stock +
                 ", clasificacion='" + clasificacion + '\'' +
                 ", pais='" + pais + '\'' +
-                ", descripcion='" + descripcion + '\'' + "count "+ vecesAlquiladas +
+                ", descripcion='" + descripcion + '\'' + ", count "+ vecesAlquiladas +
                 '}' ;
     }
 }

@@ -7,8 +7,33 @@ import java.util.LinkedList;
 public class VideoClub {
 
 
-    public void consualtarDetallesDeUnaPeliDeterminada(LinkedList<Pelicula> pelis,String pelicula){
+    public void consualtarDetallesDeUnaPeliDeterminada(LinkedList<Pelicula> pelis,String pelicula,LinkedList<Alquiler> listAlq){
+        Pelicula p;
+        Alquiler q;
+        p= buscarPeliculaDeterminada(pelis,pelicula);
+        q=buscarPeliculaDeterminadaEnAlquiler(listAlq,pelicula);
 
+        if (p.equals(q.getPeli())){
+            System.out.println( q );  // Se muestra como alquiler para obtener la mayor info posible de la pelicula, en este caso si fue alquilada.
+        }
+    }
+
+    private Pelicula buscarPeliculaDeterminada (LinkedList<Pelicula> listP, String nPeli){
+        for (Pelicula p: listP) {
+            if (p.getTitulo().equals(nPeli)){
+                return p;
+            }
+        }
+
+        return null;
+    }
+    private Alquiler buscarPeliculaDeterminadaEnAlquiler(LinkedList<Alquiler> listA, String nPeli){
+        for (Alquiler a:listA) {
+            if (a.getPeli().getTitulo().equals(nPeli)){
+                return a;
+            }
+        }
+        return null;
     }
 
     private boolean verificarSiesta(LinkedList<Pelicula> popu,Pelicula aComparar){
